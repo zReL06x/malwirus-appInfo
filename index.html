@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malwirus Security - About</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">Malwirus</div>
+            <h1>Android Device Security</h1>
+            <p>Comprehensive protection for your Android device</p>
+        </header>
+        
+        <section class="about-project">
+            <h2>About the Project</h2>
+            <p>Malwirus is an Android application developed by students of City College of Angeles located in Angeles City, Pampanga as their capstone project. It primarily aims to combat spam messages and phishing attempts while enhancing overall device security.</p>
+        </section>
+        
+        <section>
+            <h2>Overview</h2>
+            <p>Android Malwirus is a comprehensive security application designed to protect Android devices from various security threats. The application implements multiple security features including SMS protection, web security, and device security monitoring.</p>
+        </section>
+        
+        <section>
+            <h2>Key Features</h2>
+            
+            <div class="feature-card">
+                <h3>SMS Security</h3>
+                <ul>
+                    <li>SMS monitoring and filtering using machine learning classification</li>
+                    <li>Protection against malicious SMS messages with confidence scoring</li>
+                    <li>Automatic detection and scanning of URLs in SMS messages</li>
+                    <li>Whitelist management for trusted phone numbers</li>
+                    <li>SMS history tracking with detailed threat information</li>
+                </ul>
+            </div>
+            
+            <div class="feature-card">
+                <h3>Web Security</h3>
+                <ul>
+                    <li>Web browsing protection using Google SafeBrowsing API</li>
+                    <li>Malicious website detection in SMS messages</li>
+                    <li>Configurable URL scanning with toggle option in settings</li>
+                    <li>Detailed history of scanned URLs with threat information</li>
+                </ul>
+            </div>
+            
+            <div class="feature-card">
+                <h3>Device Security</h3>
+                <ul>
+                    <li>Device security monitoring dashboard</li>
+                    <li>Screen capture detection</li>
+                    <li>Screen recording detection</li>
+                    <li>Root/jailbreak detection</li>
+                    <li>Security status reporting with actionable insights</li>
+                    <li>Real-time device security assessment</li>
+                </ul>
+            </div>
+            
+            <div class="feature-card">
+                <h3>Additional Security Features</h3>
+                <ul>
+                    <li>Real-time security monitoring</li>
+                    <li>Security history tracking with detailed threat information</li>
+                    <li>Customizable security settings</li>
+                    <li>Background and foreground services for continuous protection</li>
+                    <li>Android 14 (API 34) compatibility</li>
+                    <li>Adaptive notifications based on detected threats</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Technical Details</h2>
+            <p>The application is built using modern technologies including Kotlin, AndroidX libraries, Material Design components, ONNX runtime for ML capabilities, and Google SafeBrowsing API.</p>
+            
+            <h3>Requirements</h3>
+            <ul>
+                <li>Android SDK 27 (Android 8.1) or higher</li>
+                <li>Target SDK 34 (Android 14)</li>
+                <li>Internet connectivity for URL scanning</li>
+            </ul>
+            
+            <h3>Permissions Required</h3>
+            <ul>
+                <li>Internet access</li>
+                <li>Network state access</li>
+                <li>SMS reading and receiving</li>
+                <li>Screen capture/recording detection</li>
+                <li>Foreground service</li>
+                <li>Notifications</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Security Considerations</h2>
+            <ul>
+                <li>Multiple layers of security implementation</li>
+                <li>Modern Android security best practices</li>
+                <li>User control through configurable settings</li>
+                <li>Detailed security history for audit purposes</li>
+                <li>Centralized notification system</li>
+            </ul>
+        </section>
+        
+        <section class="ml-model">
+            <h2>Machine Learning Model</h2>
+            <p>The researchers implemented an ensemble machine learning approach for enhanced security:</p>
+            <ul>
+                <li>Multimodal Naive Bayes for text classification</li>
+                <li>Random Forest for pattern recognition</li>
+                <li>Support Vector Machine (SVM) as a meta model</li>
+            </ul>
+            
+            <div class="image-gallery">
+                <p class="file-instruction">See the files attached below:</p>
+                <div class="file-links">
+                    <a href="#" class="file-link" data-image="image/Malwirus_MachineLearningModel.png">Malwirus Model Design</a>
+                    <a href="#" class="file-link" data-image="image/malwirus_confusion matrix.png">Confusion Matrix</a>
+                    <a href="#" class="file-link" data-image="image/Malwirus_PrecisionScore.png">Precision & Accuracy Scores</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Modal for enlarged image -->
+        <div id="imageModal" class="modal">
+            <span class="close-modal">&times;</span>
+            <img class="modal-content" id="enlargedImage">
+            <div id="modalCaption"></div>
+        </div>
+        
+        <footer>
+            <p>© 2023 Malwirus Security. All rights reserved.</p>
+            <p class="disclaimer">For educational and research purposes only.</p>
+        </footer>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get modal elements
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('enlargedImage');
+            const captionText = document.getElementById('modalCaption');
+            const closeBtn = document.querySelector('.close-modal');
+            
+            // Get all file links
+            const fileLinks = document.querySelectorAll('.file-link');
+            
+            // Add click event to each file link
+            fileLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const imagePath = this.getAttribute('data-image');
+                    const caption = this.textContent;
+                    
+                    // Set image source and caption
+                    modalImg.src = imagePath;
+                    captionText.textContent = caption;
+                    
+                    // Show modal - explicitly set display to flex first
+                    modal.style.display = 'flex';
+                    // Use setTimeout to allow browser to register the display change
+                    setTimeout(() => {
+                        modal.classList.add('show');
+                    }, 10);
+                });
+            });
+            
+            // Close modal when clicking the close button
+            closeBtn.addEventListener('click', function() {
+                closeModal();
+            });
+            
+            // Close modal when clicking outside the image
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    closeModal();
+                }
+            });
+            
+            // Function to handle closing the modal
+            function closeModal() {
+                modal.classList.remove('show');
+                
+                // Reset src after animation completes
+                setTimeout(() => {
+                    modal.style.display = 'none';
+                }, 300);
+            }
+        });
+    </script>
+</body>
+</html> 

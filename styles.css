@@ -390,4 +390,15 @@ footer {
     .file-link {
         padding: 10px 12px;
     }
-} 
+}
+
+/* Helper style for subtle notes on policy pages */
+.policy-note {
+    background: #fff8e1;
+    border-left: 3px solid #fbbc05;
+    padding: 12px 14px;
+    border-radius: 6px;
+    color: #5d4037;
+    font-size: 14px;
+    margin: 12px 0;
+}

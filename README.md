@@ -1,3 +1,35 @@
+# Malwirus – Privacy Policy
+
+This repository hosts the public Privacy Policy for the Malwirus Android application.
+
+## App Privacy Summary
+- **No data collection**. Malwirus does not collect, transmit, or store personal data on external servers.
+- **On-device processing**. SMS scanning, URL extraction, and device security checks happen locally on your device.
+- **URL checks via Google Safe Browsing**. When you scan a link, only that URL is sent to the Google Safe Browsing API to verify potential risks. No personal identifiers are attached by Malwirus.
+- **No analytics or ads identifiers**. The app does not use analytics tracking or advertising identifiers.
+
+## Permissions and Purpose
+- **SMS read/receive**: detect suspicious messages and extract URLs for local analysis.
+- **Internet and network state**: query Google Safe Browsing for URLs you choose to scan.
+- **Notifications and foreground service**: provide real-time alerts about potential threats.
+- **Screen capture/record detection and device state signals**: warn you about risky device conditions.
+
+## Data Retention
+- Malwirus retains no personal data on external servers.
+- Local scan history remains on your device and can be cleared in-app at any time.
+
+## Third-Party Services
+- **Google Safe Browsing API** is used solely to check if a scanned URL may be unsafe. Google may process the URL under its own terms and privacy policy.
+
+## Children’s Privacy
+- Malwirus is not directed to children under 13 and does not knowingly collect personal information from children.
+
+## Changes and Contact
+- This policy may be updated to reflect improvements or legal requirements. Updates are posted on the policy page.
+- For questions, use the developer contact provided on the app store listing.
+
+---
+
 # Android Malwirus Security Application
 
 ## Overview

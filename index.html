@@ -3,194 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Malwirus Security - About</title>
+    <title>Malwirus - Privacy Policy</title>
+
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <header>
             <div class="logo">Malwirus</div>
-            <h1>Android Device Security</h1>
-            <p>Comprehensive protection for your Android device</p>
+            <h1>Privacy Policy</h1>
+            <p>App privacy practices for the Malwirus Android application</p>
         </header>
-        
+        <div class="policy-note">Last updated: October 30, 2025</div>
+
         <section class="about-project">
-            <h2>About the Project</h2>
-            <p>Malwirus is an Android application developed by students of City College of Angeles located in Angeles City, Pampanga as their capstone project. It primarily aims to combat spam messages and phishing attempts while enhancing overall device security.</p>
+            <h2>Introduction</h2>
+            <p>This Privacy Policy explains how the Malwirus Android app handles your data. Malwirus is designed with privacy-first principles. The app does not collect, store, or sell any personal data on external servers. All analysis happens on your device, and results remain on your device.</p>
         </section>
-        
+
         <section>
-            <h2>Overview</h2>
-            <p>Android Malwirus is a comprehensive security application designed to protect Android devices from various security threats. The application implements multiple security features including SMS protection, web security, and device security monitoring.</p>
-        </section>
-        
-        <section>
-            <h2>Key Features</h2>
-            
-            <div class="feature-card">
-                <h3>SMS Security</h3>
-                <ul>
-                    <li>SMS monitoring and filtering using machine learning classification</li>
-                    <li>Protection against malicious SMS messages with confidence scoring</li>
-                    <li>Automatic detection and scanning of URLs in SMS messages</li>
-                    <li>Whitelist management for trusted phone numbers</li>
-                    <li>SMS history tracking with detailed threat information</li>
-                </ul>
-            </div>
-            
-            <div class="feature-card">
-                <h3>Web Security</h3>
-                <ul>
-                    <li>Web browsing protection using Google SafeBrowsing API</li>
-                    <li>Malicious website detection in SMS messages</li>
-                    <li>Configurable URL scanning with toggle option in settings</li>
-                    <li>Detailed history of scanned URLs with threat information</li>
-                </ul>
-            </div>
-            
-            <div class="feature-card">
-                <h3>Device Security</h3>
-                <ul>
-                    <li>Device security monitoring dashboard</li>
-                    <li>Screen capture detection</li>
-                    <li>Screen recording detection</li>
-                    <li>Root/jailbreak detection</li>
-                    <li>Security status reporting with actionable insights</li>
-                    <li>Real-time device security assessment</li>
-                </ul>
-            </div>
-            
-            <div class="feature-card">
-                <h3>Additional Security Features</h3>
-                <ul>
-                    <li>Real-time security monitoring</li>
-                    <li>Security history tracking with detailed threat information</li>
-                    <li>Customizable security settings</li>
-                    <li>Background and foreground services for continuous protection</li>
-                    <li>Android 14 (API 34) compatibility</li>
-                    <li>Adaptive notifications based on detected threats</li>
-                </ul>
-            </div>
-        </section>
-        
-        <section>
-            <h2>Technical Details</h2>
-            <p>The application is built using modern technologies including Kotlin, AndroidX libraries, Material Design components, ONNX runtime for ML capabilities, and Google SafeBrowsing API.</p>
-            
-            <h3>Requirements</h3>
+            <h2>Data We Do Not Collect</h2>
+            <p>Malwirus does not collect, transmit, or store any of the following on external servers:</p>
             <ul>
-                <li>Android SDK 27 (Android 8.1) or higher</li>
-                <li>Target SDK 34 (Android 14)</li>
-                <li>Internet connectivity for URL scanning</li>
-            </ul>
-            
-            <h3>Permissions Required</h3>
-            <ul>
-                <li>Internet access</li>
-                <li>Network state access</li>
-                <li>SMS reading and receiving</li>
-                <li>Screen capture/recording detection</li>
-                <li>Foreground service</li>
-                <li>Notifications</li>
+                <li>Personal identifiers (name, email, phone number)</li>
+                <li>SMS message contents or metadata</li>
+                <li>Contacts, photos, files, or precise location</li>
+                <li>Device identifiers for profiling or advertising</li>
+                <li>Usage analytics or behavior tracking</li>
             </ul>
         </section>
-        
+
         <section>
-            <h2>Security Considerations</h2>
-            <ul>
-                <li>Multiple layers of security implementation</li>
-                <li>Modern Android security best practices</li>
-                <li>User control through configurable settings</li>
-                <li>Detailed security history for audit purposes</li>
-                <li>Centralized notification system</li>
-            </ul>
+            <h2>How Processing Works</h2>
+
+            <div class="feature-card">
+                <h3>On-Device Analysis</h3>
+                <ul>
+                    <li>SMS scanning and threat detection are performed locally on your device.</li>
+                    <li>Detected results and history are stored only on your device.</li>
+                    <li>You can clear history at any time from within the app.</li>
+                </ul>
+            </div>
+
+            <div class="feature-card">
+                <h3>Link Safety Checks</h3>
+                <ul>
+                    <li>When you choose to scan a URL, the app sends the URL only to the Google Safe Browsing API to verify potential risks.</li>
+                    <li>No additional personal information is attached to these requests.</li>
+                    <li>Responses are used solely to inform you about link safety.</li>
+                </ul>
+            </div>
+
+            <div class="feature-card">
+                <h3>Device Security Signals</h3>
+                <ul>
+                    <li>Security state is evaluated on-device (e.g., root detection, screen capture/record detection).</li>
+                    <li>No device security signal is sent to external servers by Malwirus.</li>
+                </ul>
+            </div>
         </section>
-        
+
+        <section>
+            <h2>Permissions and Purpose</h2>
+            <p>Malwirus requests only the permissions needed to provide security features:</p>
+            <ul>
+                <li>SMS read/receive: to detect suspicious messages and extract URLs for local analysis.</li>
+                <li>Internet and network state: to query Google Safe Browsing for specific URLs you choose to scan.</li>
+                <li>Notifications and foreground service: to alert you to potential threats in real-time.</li>
+                <li>Screen capture/record detection and device state signals: to warn you of risky conditions on your device.</li>
+            </ul>
+            <p>Permissions can be managed in your device Settings at any time.</p>
+        </section>
+
+        <section>
+            <h2>Third-Party Services</h2>
+            <p>We use the Google Safe Browsing API solely to check if a URL may be unsafe. Only the URL you scan is sent; no personal identifiers are included. Google may process this data under its own terms and privacy policy.</p>
+        </section>
+
         <section class="ml-model">
-            <h2>Machine Learning Model</h2>
-            <p>The researchers implemented an ensemble machine learning approach for enhanced security:</p>
+            <h2>Data Retention</h2>
+            <p>Malwirus does not retain personal data on external servers. Scan logs and detection history are stored locally on your device and are fully under your control.</p>
+            <h2>Your Choices</h2>
             <ul>
-                <li>Multimodal Naive Bayes for text classification</li>
-                <li>Random Forest for pattern recognition</li>
-                <li>Support Vector Machine (SVM) as a meta model</li>
+                <li>Enable/disable URL scanning and other features in Settings.</li>
+                <li>Clear local history at any time from within the app.</li>
+                <li>Manage app permissions in your device Settings.</li>
             </ul>
-            
-            <div class="image-gallery">
-                <p class="file-instruction">See the files attached below:</p>
-                <div class="file-links">
-                    <a href="#" class="file-link" data-image="image/Malwirus_MachineLearningModel.png">Malwirus Model Design</a>
-                    <a href="#" class="file-link" data-image="image/malwirus_confusion matrix.png">Confusion Matrix</a>
-                    <a href="#" class="file-link" data-image="image/Malwirus_PrecisionScore.png">Precision & Accuracy Scores</a>
-                </div>
-            </div>
+            <h2>Children’s Privacy</h2>
+            <p>Malwirus is not directed to children under 13. We do not knowingly collect personal data from children.</p>
+            <h2>Changes to This Policy</h2>
+            <p>We may update this policy to reflect improvements or legal requirements. Changes will be posted on this page with an updated date.</p>
+            <h2>Contact</h2>
+            <p>If you have questions about this Privacy Policy, please refer to the developer contact provided in the app store listing.</p>
         </section>
-        
-        <!-- Modal for enlarged image -->
-        <div id="imageModal" class="modal">
-            <span class="close-modal">&times;</span>
-            <img class="modal-content" id="enlargedImage">
-            <div id="modalCaption"></div>
-        </div>
-        
+
         <footer>
-            <p>© 2023 Malwirus Security. All rights reserved.</p>
-            <p class="disclaimer">For educational and research purposes only.</p>
+            <p>© 2025 Malwirus. All rights reserved.</p>
+            <p class="disclaimer">This page describes how the Malwirus app handles data. No personal data is collected or stored on external servers.</p>
         </footer>
+
     </div>
-    
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Get modal elements
-            const modal = document.getElementById('imageModal');
-            const modalImg = document.getElementById('enlargedImage');
-            const captionText = document.getElementById('modalCaption');
-            const closeBtn = document.querySelector('.close-modal');
-            
-            // Get all file links
-            const fileLinks = document.querySelectorAll('.file-link');
-            
-            // Add click event to each file link
-            fileLinks.forEach(link => {
-                link.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const imagePath = this.getAttribute('data-image');
-                    const caption = this.textContent;
-                    
-                    // Set image source and caption
-                    modalImg.src = imagePath;
-                    captionText.textContent = caption;
-                    
-                    // Show modal - explicitly set display to flex first
-                    modal.style.display = 'flex';
-                    // Use setTimeout to allow browser to register the display change
-                    setTimeout(() => {
-                        modal.classList.add('show');
-                    }, 10);
-                });
-            });
-            
-            // Close modal when clicking the close button
-            closeBtn.addEventListener('click', function() {
-                closeModal();
-            });
-            
-            // Close modal when clicking outside the image
-            modal.addEventListener('click', function(e) {
-                if (e.target === modal) {
-                    closeModal();
-                }
-            });
-            
-            // Function to handle closing the modal
-            function closeModal() {
-                modal.classList.remove('show');
-                
-                // Reset src after animation completes
-                setTimeout(() => {
-                    modal.style.display = 'none';
-                }, 300);
-            }
-        });
-    </script>
+
 </body>
-</html> 
+</html>
